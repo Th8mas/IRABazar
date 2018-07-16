@@ -1,0 +1,13 @@
+#BorderPane .anchorpane {
+    -fx-fit-to-width: true;
+    -fx-pref-width: 100%;
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}
+
+.root{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Courier New";
+}

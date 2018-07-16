@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="orderDetail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.droow.irabazar.controllers.product.ProductPayoutController">
+    <children>
+        <GridPane alignment="CENTER_RIGHT" layoutX="14.0" layoutY="81.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="100.0" percentWidth="30.0" prefWidth="150.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="200.0" percentWidth="70.0" prefWidth="300.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="200.0" percentWidth="70.0" prefWidth="300.0" />
+            <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="60.0" minHeight="10.0" percentHeight="8.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="94.0" minHeight="0.0" percentHeight="7.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="144.0" minHeight="0.0" percentHeight="7.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="196.0" minHeight="0.0" percentHeight="7.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="196.0" minHeight="0.0" percentHeight="7.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="361.0" minHeight="0.0" percentHeight="7.0" prefHeight="69.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="686.0" minHeight="10.0" percentHeight="7.0" prefHeight="65.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="555.0" minHeight="0.0" percentHeight="7.0" prefHeight="98.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="555.0" minHeight="10.0" percentHeight="50.0" prefHeight="380.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.valignment="CENTER">
+                    <children>
+                        <Label text="Vyplacení zboží">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Produkt:" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonAction" text="Zpět" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onProductPayout" text="Vyplatit" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <ComboBox fx:id="productInput" prefHeight="25.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Label fx:id="priceLabel" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

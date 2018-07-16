@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" minHeight="-Infinity" minWidth="-Infinity" stylesheets="/styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.droow.irabazar.controllers.RootController">
+   <top>
+       <MenuBar prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="TOP_CENTER">
+           <menus>
+               <Menu mnemonicParsing="false" text="Zboží">
+               <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onMenuProductsAction" text="Přehled" />
+                    <!--<MenuItem mnemonicParsing="false" onAction="#onMenuProductsNewAction" text="Přidat" />-->
+                    <MenuItem mnemonicParsing="false" onAction="#onMenuProductsCategoriesAction" text="Kategorie" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuProductsReceiptAction" text="Příjem" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuProductsSaleAction" text="Prodej" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuProductsPayout" text="Vyplacení" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuProductsStockingAction" text="Tisk inventury" />
+               </items></Menu>
+               <Menu mnemonicParsing="false" text="Zákazníci">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuCustomersAction" text="Přehled" />
+                   <MenuItem mnemonicParsing="false" onAction="#onMenuCustomersNewAction" text="Přidat" />
+               </items></Menu>
+               <!--<Menu mnemonicParsing="false" text="Přehledy" />
+               <Menu mnemonicParsing="false" text="Statistika" />-->
+               <Menu mnemonicParsing="false" text="Doklady">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuContractsAction" text="Smlouvy" />
+                  <MenuItem mnemonicParsing="false" onAction="#onMenuOrdersAction" text="Účtenky" />
+               </items></Menu>
+               <Menu mnemonicParsing="false" text="Nastavení">
+               <items>
+                   <MenuItem mnemonicParsing="false" onAction="#onMenuSettingsAction" text="Proměnné" />
+                   <MenuItem mnemonicParsing="false" onAction="#onMenuSettingsPostponeAction" text="Posunutí termínů" />
+               </items></Menu>
+               <Menu mnemonicParsing="false" text="Nápověda">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#onMenuHelpAboutAction" text="O aplikaci" />
+                   </items>
+               </Menu>
+           </menus>
+       </MenuBar>
+   </top>
+   <center>
+      <AnchorPane style="-fx-min-width: 100%; -fx-pref-width: 100%;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

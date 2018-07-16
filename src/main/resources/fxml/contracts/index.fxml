@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="orders" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.droow.irabazar.controllers.contract.ContractIndexController">
+   <children>
+       <Label layoutX="8.0" layoutY="8.0" text="Smlouvy" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+           <font>
+               <Font size="36.0" />
+           </font></Label>
+      <TableView fx:id="contractsListTableView" layoutX="48.0" layoutY="92.0" prefHeight="204.0" prefWidth="574.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+       <TextField fx:id="contractFilterInput" layoutX="209.0" layoutY="18.0" promptText="Vyhledat">
+           <font>
+               <Font size="20.0" />
+           </font></TextField>
+   </children>
+</AnchorPane>

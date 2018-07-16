@@ -1,0 +1,40 @@
+<configuration>
+
+	  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"> 
+    	<!-- encoders are  by default assigned the type
+        	ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+
+    	<encoder>
+      		<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    	</encoder>
+
+   		<!-- deny all events with a level below INFO, that is TRACE and DEBUG -->
+    	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      		<level>INFO</level>
+    	</filter>
+
+  	</appender>
+  
+  	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+  		
+		<!-- create new log file every day -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>./log/log_%d{yyyy_MM_dd}.log</FileNamePattern>
+		</rollingPolicy>
+		  	
+   		<!-- deny all events with a level below INFO, that is TRACE and DEBUG -->
+    	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      		<level>INFO</level>
+    	</filter>     
+    	
+     	<encoder>
+       		<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+     	</encoder>
+   	</appender>
+    
+  	<root level="INFO">
+	   <appender-ref ref="STDOUT" />
+    	<appender-ref ref="FILE" />
+    </root>
+	
+</configuration>

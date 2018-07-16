@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="productDetail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.droow.irabazar.controllers.product.ProductDetailController">
+    <children>
+      <ScrollPane fx:id="sp" fitToWidth="true" hbarPolicy="NEVER" prefHeight="800.0" prefViewportHeight="800.0" prefViewportWidth="800.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <VBox fx:id="contentVBox" alignment="TOP_CENTER" cacheShape="false" maxHeight="1.7976931348623157E308" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                          <GridPane fx:id="baseGridPane" alignment="CENTER_RIGHT" minHeight="600.0" prefHeight="754.0" prefWidth="978.0">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="100.0" percentWidth="30.0" prefWidth="150.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="200.0" percentWidth="47.0" prefWidth="300.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="200.0" percentWidth="23.0" prefWidth="300.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="187.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="307.0" minHeight="10.0" prefHeight="305.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.valignment="CENTER">
+                                      <children>
+                                          <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonAction" text="Zpět" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                              <GridPane.margin>
+                                                  <Insets right="10.0" />
+                                              </GridPane.margin>
+                                          </Button>
+                                          <Label text="Předmět">
+                                              <font>
+                                                  <Font size="36.0" />
+                                              </font>
+                                          </Label>
+                                          <Label fx:id="productNameLabel" text="">
+                                              <font>
+                                                  <Font size="36.0" />
+                                              </font>
+                                          </Label>
+                                      </children>
+                                  </HBox>
+                                  <Label alignment="CENTER_RIGHT" text="Název:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                                      <GridPane.margin>
+                                          <Insets right="5.0" />
+                                      </GridPane.margin>
+                              </Label>
+                                  <Label text="Cena celkem:" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                                      <GridPane.margin>
+                                          <Insets right="5.0" />
+                                      </GridPane.margin>
+                              </Label>
+                                  <!--<Label text="Přijato na dní:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                                      <GridPane.margin>
+                                                <Insets right="5.0" />
+                                            </GridPane.margin></Label>
+                                            -->
+                                  <Label text="Typ:" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                                      <GridPane.margin>
+                                          <Insets right="5.0" />
+                                      </GridPane.margin>
+                              </Label>
+                                  <!--<Label text="Přijato:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                      <GridPane.margin>
+                                                <Insets right="5.0" />
+                                            </GridPane.margin></Label>-->
+                                  <Label fx:id="nameLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                  <Label fx:id="descriptionLabel" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                  <Label fx:id="priceLabel" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                  <!--<DatePicker fx:id="acceptedInput" GridPane.columnIndex="2" GridPane.rowIndex="7" />-->
+                                  <!--<Label text="Zákazník:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                                     <GridPane.margin>
+                                              <Insets right="5.0" />
+                                           </GridPane.margin>
+                                        </Label>
+                                        <ChoiceBox fx:id="customerInput" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />-->
+                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                      <children>
+                                          <Label fx:id="typeLabel" />
+                                      </children>
+                                      <GridPane.margin>
+                                          <Insets left="10.0" />
+                                      </GridPane.margin>
+                                  </HBox>
+                                  <!--<Label fx:id="daysInput" maxWidth="50.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />-->
+                                  <Label text="Kategorie:" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                                     <GridPane.margin>
+                                        <Insets right="5.0" />
+                                     </GridPane.margin>
+                              </Label>
+                                  <Label fx:id="categoryLabel" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                  <Label text="Popis:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                                     <GridPane.margin>
+                                        <Insets right="5.0" />
+                                     </GridPane.margin>
+                                  </Label>
+                              <Label text="Kusů:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <children>
+                                    <Label fx:id="countLabel" maxWidth="120.0" />
+                                    <Label fx:id="originalCountLabel" />
+                                 </children>
+                              </HBox>
+                              <Label text="Kód:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="codeLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="Prodejní marže:" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Prodejní cena:" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="salePriceLabel" text="0 Kč" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                 <children>
+                                    <Label fx:id="profitLabel" maxWidth="120.0" />
+                                    <Label text="\%" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#onEditButtonAction" text="Upravit" />
+                                    <Button mnemonicParsing="false" onAction="#onBackButtonAction" text="Zpět" />
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </HBox>
+                              <Label text="Částí:" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="partsLabel" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                              <Label text="Smlouva:" GridPane.halignment="RIGHT" GridPane.rowIndex="12">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="contractButton" mnemonicParsing="false" onAction="#onContractButtonAction" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                              <Label text="Opakovaný prodej:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="repeatedSaleLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label contentDisplay="RIGHT" text="Prodej:" GridPane.halignment="RIGHT" GridPane.rowIndex="13" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TableView fx:id="salesTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                                 <GridPane.margin>
+                                    <Insets top="10.0" />
+                                 </GridPane.margin>
+                              </TableView>
+                              </children>
+                          </GridPane>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>

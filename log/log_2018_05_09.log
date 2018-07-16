@@ -1,0 +1,106 @@
+21:11:59.420 [main] INFO  Main - Starting application...
+21:12:00.303 [JavaFX Application Thread] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: myPU
+	...]
+21:12:00.386 [JavaFX Application Thread] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.6.Final}
+21:12:00.388 [JavaFX Application Thread] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:12:00.390 [JavaFX Application Thread] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+21:12:00.614 [JavaFX Application Thread] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:12:01.052 [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+21:12:01.065 [JavaFX Application Thread] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+21:12:01.258 [JavaFX Application Thread] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+21:12:01.744 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+21:12:01.744 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+21:12:01.751 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+21:12:01.792 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.categories
+21:12:01.792 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [created, parent_id, name, id]
+21:12:01.792 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_2n3awjv8ah4gl5ca1bq26sori]
+21:12:01.792 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [categories_pkey]
+21:12:01.816 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.contracts
+21:12:01.816 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [datetopickup, code, created, totalprice, payoutcontent, renewedcontract, content, daystokeep, dateto, paid, id, datefrom, customer_id, profit, renewedfromcontract, status]
+21:12:01.816 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_1th2ajxr9llw8w4o8hc01ktv4, fk_529pawax05h2bluyn796vpqio, fk_2b1dfmhmwf2x64a9irviapvq2]
+21:12:01.816 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [contracts_pkey]
+21:12:01.838 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.customers
+21:12:01.838 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [op, firstname, address, birthdate, code, created, lastname, ico, phone, id, opauthority, dico, email]
+21:12:01.838 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:12:01.839 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [customers_pkey]
+21:12:01.861 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.options
+21:12:01.862 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [name, id, value]
+21:12:01.862 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:12:01.862 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_9o64ripk4tkpj6osqw3d3mpcf, options_pkey]
+21:12:01.886 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.order_items
+21:12:01.886 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_price, price, product_id, count, id, order_id]
+21:12:01.886 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9gap2fmw66v092ntb58rtohwh, fk_3fea23hxar30bx7m7h8ed25n9]
+21:12:01.886 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [order_items_pkey]
+21:12:01.908 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.orders
+21:12:01.908 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, created, totalprice, id, status]
+21:12:01.908 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:12:01.908 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [orders_pkey]
+21:12:01.930 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.product_categories
+21:12:01.930 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [category_id, product_id]
+21:12:01.930 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_hc74hlx9wb51pq4wepgeknmu0, fk_lguc79qdx3s3fa3kbwdl0tudq]
+21:12:01.930 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [product_categories_pkey]
+21:12:01.951 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.products
+21:12:01.952 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [penale, total_sale_price, code, contract_id, description, is_lower_price, total_lower_price, type, renewedfromproduct, price, total_storage_fee, originalcount, id, withdrawal_fee, total_price, created, count, renewedproduct, datesold, sale_price, storage_fee, lower_price, name, parts, repeated_sale, status]
+21:12:01.952 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_fqenvf73frxiaj8pwkaxg7mb, fk_kvehrpgcuqekuis50s0r3lu93, fk_swe3738t7o59tf6im253ejbgr]
+21:12:01.952 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [products_pkey]
+21:12:01.954 [JavaFX Application Thread] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: "hibernate_sequence"
+21:12:01.957 [JavaFX Application Thread] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: "hibernate_sequences"
+21:12:01.959 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: create sequence "hibernate_sequence"
+21:12:01.960 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - ERROR: relation "hibernate_sequence" already exists
+21:12:01.960 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: create table "hibernate_sequences" ( "sequence_name" varchar(255),  "sequence_next_hi_value" int4 )
+21:12:01.960 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - ERROR: relation "hibernate_sequences" already exists
+21:12:01.961 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+21:18:55.890 [main] INFO  Main - Starting application...
+21:18:56.577 [JavaFX Application Thread] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: myPU
+	...]
+21:18:56.643 [JavaFX Application Thread] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.6.Final}
+21:18:56.645 [JavaFX Application Thread] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:18:56.646 [JavaFX Application Thread] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+21:18:56.826 [JavaFX Application Thread] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:18:57.204 [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+21:18:57.214 [JavaFX Application Thread] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+21:18:57.371 [JavaFX Application Thread] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+21:18:57.768 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+21:18:57.768 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+21:18:57.772 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+21:18:57.804 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.categories
+21:18:57.804 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [created, parent_id, name, id]
+21:18:57.804 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_2n3awjv8ah4gl5ca1bq26sori]
+21:18:57.804 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [categories_pkey]
+21:18:57.827 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.contracts
+21:18:57.828 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [datetopickup, code, created, totalprice, payoutcontent, renewedcontract, content, daystokeep, dateto, paid, id, datefrom, customer_id, profit, renewedfromcontract, status]
+21:18:57.828 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_1th2ajxr9llw8w4o8hc01ktv4, fk_529pawax05h2bluyn796vpqio, fk_2b1dfmhmwf2x64a9irviapvq2]
+21:18:57.828 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [contracts_pkey]
+21:18:57.854 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.customers
+21:18:57.854 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [op, firstname, address, birthdate, code, created, lastname, ico, phone, id, opauthority, dico, email]
+21:18:57.854 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:18:57.854 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [customers_pkey]
+21:18:57.876 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.options
+21:18:57.876 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [name, id, value]
+21:18:57.876 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:18:57.876 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_9o64ripk4tkpj6osqw3d3mpcf, options_pkey]
+21:18:57.898 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.order_items
+21:18:57.898 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_price, price, product_id, count, id, order_id]
+21:18:57.899 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9gap2fmw66v092ntb58rtohwh, fk_3fea23hxar30bx7m7h8ed25n9]
+21:18:57.899 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [order_items_pkey]
+21:18:57.921 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.orders
+21:18:57.921 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [code, created, totalprice, id, status]
+21:18:57.922 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:18:57.922 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [orders_pkey]
+21:18:57.943 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.product_categories
+21:18:57.944 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [category_id, product_id]
+21:18:57.944 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_hc74hlx9wb51pq4wepgeknmu0, fk_lguc79qdx3s3fa3kbwdl0tudq]
+21:18:57.944 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [product_categories_pkey]
+21:18:57.966 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.products
+21:18:57.966 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [penale, total_sale_price, code, contract_id, description, is_lower_price, total_lower_price, type, renewedfromproduct, price, total_storage_fee, originalcount, id, withdrawal_fee, total_price, created, count, renewedproduct, datesold, sale_price, storage_fee, lower_price, name, parts, repeated_sale, status]
+21:18:57.966 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_fqenvf73frxiaj8pwkaxg7mb, fk_kvehrpgcuqekuis50s0r3lu93, fk_swe3738t7o59tf6im253ejbgr]
+21:18:57.966 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [products_pkey]
+21:18:57.969 [JavaFX Application Thread] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: "hibernate_sequence"
+21:18:57.971 [JavaFX Application Thread] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: "hibernate_sequences"
+21:18:57.973 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: create sequence "hibernate_sequence"
+21:18:57.973 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - ERROR: relation "hibernate_sequence" already exists
+21:18:57.973 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: create table "hibernate_sequences" ( "sequence_name" varchar(255),  "sequence_next_hi_value" int4 )
+21:18:57.973 [JavaFX Application Thread] ERROR o.h.tool.hbm2ddl.SchemaUpdate - ERROR: relation "hibernate_sequences" already exists
+21:18:57.973 [JavaFX Application Thread] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
